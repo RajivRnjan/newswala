@@ -14,18 +14,18 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route exact path="/newswala" element={<Home />} />
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
-          <Route path="/general" element={<FetchData cat="general" />} />
-          <Route path="/business" element={<FetchData cat="business" />} />
+          <Route exact path="/newswala/" element={<Home />} />
+          <Route exact path="/newswala/home" element={<Home />} />
+          <Route path="/newswala/general" element={<FetchData cat="general" />} />
+          <Route path="/newswala/business" element={<FetchData cat="business" />} />
           <Route
-            path="/entertainment"
+            path="/newswala/entertainment"
             element={<FetchData cat="entertainment" />}
           />
-          <Route path="/health" element={<FetchData cat="health" />} />
-          <Route path="/science" element={<FetchData cat="science" />} />
-          <Route path="/sport" element={<FetchData cat="sport" />} />
-          <Route path="/technology" element={<FetchData cat="technology" />} />
+          <Route path="/newswala/health" element={<FetchData cat="health" />} />
+          <Route path="/newswala/science" element={<FetchData cat="science" />} />
+          <Route path="/newswala/sport" element={<FetchData cat="sport" />} />
+          <Route path="/newswala/technology" element={<FetchData cat="technology" />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
