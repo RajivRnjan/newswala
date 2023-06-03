@@ -13,6 +13,7 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route exact path="/newswala" element={<Home />} />
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route path="/general" element={<FetchData cat="general" />} />
